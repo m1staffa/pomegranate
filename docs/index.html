@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#2b0d1a">
   <title>Pomegranate — Windows üçün fayl alətləri</title>
   <link rel="icon" type="image/png" href="assets/nar.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=desktop1">
 </head>
 <body>
   <a class="skip" href="#esas">Əsas məzmuna keç</a>
@@ -21,7 +21,7 @@
         <p class="platform">Windows x64</p>
         <h1>Fayllarını<br> <em>özün çevir.</em></h1>
         <p class="lead">PDF-ləri birləşdir, şəkilləri kəs, videodan səs çıxar. Faylı sürüklə və lazım olan əməliyyatı seç.</p>
-        <a class="button" href="https://github.com/m1staffa/pomegranate/releases/latest/download/Pomegranate-Windows-x64.zip">Windows üçün yüklə</a>
+        <a class="button" href="https://github.com/m1staffa/pomegranate/releases/latest">Windows üçün yüklə</a>
         <p class="meta">Daşına bilən ZIP · 92,5 MB · .NET daxildir</p>
       </div>
       <figure class="app">
@@ -46,29 +46,36 @@
   </section>
   <section class="wrap playground" id="sina" aria-labelledby="demo-title">
     <h2 id="demo-title">Brauzerdə sına</h2>
-    <p>Nümunə faylı dairədəki seçimə sürüklə və ya klikləyib əməliyyatı seç. <kbd>Shift</kbd>, <kbd>Ctrl</kbd> və <kbd>Alt</kbd> menyunu dəyişir.</p>
-    <div class="demo" data-demo>
+    <p class="demo-mobile-message">Demonu kompüterdə aça bilərsən.</p>
+    <p class="demo-desktop-only">Faylları masaüstündə istədiyin yerə sürüklə. Çevirmək üçün sürükləyərkən <kbd>Shift</kbd> bas, sonra faylı dairədəki formata burax.</p>
+    <div class="demo demo-desktop-only" data-demo>
       <div class="demo-bar">
-        <strong>Sınaq masası</strong>
+        <strong>Sınaq masaüstü</strong>
+        <button class="demo-reset" type="button">Sıfırla</button>
+      </div>
+      <div class="demo-workspace">
+        <div class="demo-files" role="group" aria-label="Nümunə fayllar">
+          <button type="button" data-file="photo" style="--x:12%;--y:20%" aria-pressed="true"><span class="demo-file-icon demo-photo" aria-hidden="true"></span><span class="demo-filename">şəkil.jpg</span></button>
+          <button type="button" data-file="pdfs" style="--x:39%;--y:62%" aria-pressed="false"><span class="demo-file-icon demo-pdf" aria-hidden="true">PDF</span><span class="demo-filename">2 PDF faylı</span></button>
+          <button type="button" data-file="video" style="--x:72%;--y:27%" aria-pressed="false"><span class="demo-file-icon demo-video" aria-hidden="true">MP4</span><span class="demo-filename">video.mp4</span></button>
+        </div>
+        <div class="demo-wheel" role="group" aria-label="Dairə seçimləri" hidden>
+          <span class="demo-center"><img src="assets/nar.png" width="32" height="32" alt="" draggable="false"><span class="demo-wheel-label"></span></span>
+          <div class="demo-petals"></div>
+        </div>
+      </div>
+      <div class="demo-taskbar">
+        <img src="assets/nar.png" width="29" height="29" alt="">
         <div class="demo-modes" aria-label="Dairə menyusunun rejimi">
-          <button type="button" data-mode="convert" aria-pressed="true"><kbd>Shift</kbd> Çevir</button>
+          <button type="button" data-mode="convert" aria-pressed="false"><kbd>Shift</kbd> Çevir</button>
           <button type="button" data-mode="tools" aria-pressed="false"><kbd>Ctrl</kbd> Alətlər</button>
           <button type="button" data-mode="actions" aria-pressed="false"><kbd>Alt</kbd> Fayl əməliyyatları</button>
         </div>
       </div>
-      <div class="demo-workspace">
-        <div class="demo-files" role="group" aria-label="Nümunə fayllar">
-          <button type="button" data-file="photo" aria-pressed="true"><span class="demo-file-icon demo-photo" aria-hidden="true">JPG</span><span>şəkil.jpg</span></button>
-          <button type="button" data-file="pdfs" aria-pressed="false"><span class="demo-file-icon demo-pdf" aria-hidden="true">PDF</span><span>2 PDF faylı</span></button>
-          <button type="button" data-file="video" aria-pressed="false"><span class="demo-file-icon demo-video" aria-hidden="true">MP4</span><span>video.mp4</span></button>
-        </div>
-        <div class="demo-wheel" role="group" aria-label="Dairə seçimləri">
-          <span class="demo-center"></span><div class="demo-petals"></div>
-        </div>
-      </div>
-      <p class="demo-status" role="status">Bu sınaq əməliyyatları canlandırır. Fayl yaradılmır və yüklənmir.</p>
+      <p class="demo-status" role="status">Fayl seç və ya onu sürüklə.</p>
     </div>
-    <noscript><p>Brauzer demosunu açmaq üçün JavaScript-i aktiv et.</p></noscript>
+    <p class="demo-note demo-desktop-only">Bu sınaqda nümunə nəticələr masaüstündə görünür. Həqiqi çevirmə Windows proqramında aparılır.</p>
+    <noscript class="demo-desktop-only"><p>Brauzer demosunu açmaq üçün JavaScript-i aktiv et.</p></noscript>
   </section>
 
   <section class="wrap tutorial" id="telimat" aria-labelledby="tutorial-title">
@@ -95,13 +102,13 @@
       <div>
         <h2 id="download-title">Pomegranate-i aç</h2>
         <ol>
-          <li>Windows x64 ZIP faylını yüklə.</li>
+          <li>GitHub-da <strong>Assets</strong> bölməsindən <strong>Pomegranate-Windows-x64.zip</strong> faylını yüklə.</li>
           <li>ZIP-in bütün məzmununu bir qovluğa çıxar.</li>
           <li><code>Pomegranate.exe</code> faylını aç.</li>
         </ol>
       </div>
       <div>
-        <a class="button dark-button" href="https://github.com/m1staffa/pomegranate/releases/latest/download/Pomegranate-Windows-x64.zip">ZIP faylını yüklə</a>
+        <a class="button dark-button" href="https://github.com/m1staffa/pomegranate/releases/latest">Son buraxılışı aç</a>
         <p>Media, Office və veb yükləmələri üçün proqramın içində <strong>Alətləri hazırla</strong> bölməsini aç.</p>
         <p>Bu buraxılış imzasızdır. Windows ilk açılışda SmartScreen bildirişi göstərə bilər.</p>
       </div>
@@ -111,6 +118,6 @@
     <img src="assets/nar.png" width="42" height="42" alt="">
     <div><strong>Pomegranate</strong><p>Windows üçün müstəqil fayl proqramı. Dairəvi sürüklə-burax iş üsulu macOS tətbiqi <a href="https://tangerineformac.com/">Tangerine for Mac</a>-dan ilhamlanıb.</p><a href="licenses.html">Lisenziyalar və müəllif bildirişləri</a></div>
   </footer>
-<script defer src="demo.js"></script>
+<script defer src="demo.js?v=desktop1"></script>
 </body>
 </html>
