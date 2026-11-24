@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pomegranate Windows üçün fayl çevirmə və redaktə proqramıdır. Şəkilləri kəs, PDF-ləri birləşdir və videodan səs çıxar.">
+  <meta name="theme-color" content="#2b0d1a">
+  <title>Pomegranate — Windows üçün fayl alətləri</title>
+  <link rel="icon" type="image/png" href="assets/nar.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#esas">Əsas məzmuna keç</a>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="#esas"><img src="assets/nar.png" width="38" height="38" alt="">Pomegranate</a>
+      <nav aria-label="Əsas menyu"><a href="#funksiyalar">Funksiyalar</a><a href="#sina">Sına</a><a href="#telimat">Təlimat</a><a href="#yukle">Yüklə</a></nav>
+    </div>
+    <main id="esas" class="wrap hero">
+      <div class="intro">
+        <p class="platform">Windows x64</p>
+        <h1>Fayllarını<br> <em>özün çevir.</em></h1>
+        <p class="lead">PDF-ləri birləşdir, şəkilləri kəs, videodan səs çıxar. Faylı sürüklə və lazım olan əməliyyatı seç.</p>
+        <a class="button" href="https://github.com/m1staffa/pomegranate/releases/latest/download/Pomegranate-Windows-x64.zip">Windows üçün yüklə</a>
+        <p class="meta">Daşına bilən ZIP · 92,5 MB · .NET daxildir</p>
+      </div>
+      <figure class="app">
+        <div class="appbar">Pomegranate<span class="window-controls" aria-hidden="true">− □ ×</span></div>
+        <img src="assets/pomegranate-windows.png" width="700" height="543" alt="Pomegranate proqramının bordo interfeysi və fayl sürükləmə sahəsi" fetchpriority="high">
+      </figure>
+    </main>
+  </header>
+  <section class="wrap feature" id="funksiyalar" aria-labelledby="features-title">
+    <div>
+      <h2 id="features-title">Faylı sürüklə.<br>Əməliyyatı seç.</h2>
+      <p>Explorer və ya masaüstündən faylı sürükləyərkən klaviaturadan uyğun düyməni bas. Dairədə həmin fayla uyğun seçimləri görəcəksən.</p>
+      <dl>
+        <div><dt><kbd>Shift</kbd></dt><dd>Formatı dəyiş</dd></div>
+        <div><dt><kbd>Ctrl</kbd></dt><dd>Kəsmə və redaktə alətlərini aç</dd></div>
+        <div><dt><kbd>Alt</kbd></dt><dd>Fayl əməliyyatlarını aç, PDF-ləri birləşdir və sıxışdır</dd></div>
+      </dl>
+    </div>
+    <figure class="wheel">
+      <img src="assets/alt-dairesi.png" width="320" height="320" alt="İki PDF seçildikdə birləşdirmə və sıxışdırma seçimlərini göstərən Alt dairəsi" loading="lazy">
+    </figure>
+  </section>
+  <section class="wrap playground" id="sina" aria-labelledby="demo-title">
+    <h2 id="demo-title">Brauzerdə sına</h2>
+    <p>Nümunə faylı dairədəki seçimə sürüklə və ya klikləyib əməliyyatı seç. <kbd>Shift</kbd>, <kbd>Ctrl</kbd> və <kbd>Alt</kbd> menyunu dəyişir.</p>
+    <div class="demo" data-demo>
+      <div class="demo-bar">
+        <strong>Sınaq masası</strong>
+        <div class="demo-modes" aria-label="Dairə menyusunun rejimi">
+          <button type="button" data-mode="convert" aria-pressed="true"><kbd>Shift</kbd> Çevir</button>
+          <button type="button" data-mode="tools" aria-pressed="false"><kbd>Ctrl</kbd> Alətlər</button>
+          <button type="button" data-mode="actions" aria-pressed="false"><kbd>Alt</kbd> Fayl əməliyyatları</button>
+        </div>
+      </div>
+      <div class="demo-workspace">
+        <div class="demo-files" role="group" aria-label="Nümunə fayllar">
+          <button type="button" data-file="photo" aria-pressed="true"><span class="demo-file-icon demo-photo" aria-hidden="true">JPG</span><span>şəkil.jpg</span></button>
+          <button type="button" data-file="pdfs" aria-pressed="false"><span class="demo-file-icon demo-pdf" aria-hidden="true">PDF</span><span>2 PDF faylı</span></button>
+          <button type="button" data-file="video" aria-pressed="false"><span class="demo-file-icon demo-video" aria-hidden="true">MP4</span><span>video.mp4</span></button>
+        </div>
+        <div class="demo-wheel" role="group" aria-label="Dairə seçimləri">
+          <span class="demo-center"></span><div class="demo-petals"></div>
+        </div>
+      </div>
+      <p class="demo-status" role="status">Bu sınaq əməliyyatları canlandırır. Fayl yaradılmır və yüklənmir.</p>
+    </div>
+    <noscript><p>Brauzer demosunu açmaq üçün JavaScript-i aktiv et.</p></noscript>
+  </section>
+
+  <section class="wrap tutorial" id="telimat" aria-labelledby="tutorial-title">
+    <h2 id="tutorial-title">Video təlimat</h2>
+    <video controls playsinline preload="metadata" width="1280" height="720"
+        poster="assets/video-onbaxis.png" aria-label="Pomegranate üçün 65 saniyəlik animasiyalı təlimat">
+      <source src="assets/Pomegranate-Telimati.mp4" type="video/mp4">
+      <a href="assets/Pomegranate-Telimati.mp4">Təlimat videosunu yüklə</a>
+    </video>
+    <details>
+      <summary>Təlimatı mətnlə oxu</summary>
+      <ul>
+        <li>Explorer-dən faylı sürüklə və ya proqramda Ctrl+O ilə seç.</li>
+        <li>Formatı dəyişmək üçün faylı sürükləyərkən Shift bas və çıxış formatına burax.</li>
+        <li>İki və ya daha çox PDF-i birlikdə sürüklə, Alt bas və birləşdirmə seçiminə burax. Sıranı və hədəf ölçünü seç.</li>
+        <li>Şəkli sürükləyərkən Ctrl bas, Şəkli kəs seçimini aç və saxlayacağın sahəni seç.</li>
+        <li>Açıq media linkini kopyala və Ctrl+Shift+D bas. Linkin dəstəklədiyi çıxışı seç.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="download" id="yukle" aria-labelledby="download-title">
+    <div class="wrap download-grid">
+      <div>
+        <h2 id="download-title">Pomegranate-i aç</h2>
+        <ol>
+          <li>Windows x64 ZIP faylını yüklə.</li>
+          <li>ZIP-in bütün məzmununu bir qovluğa çıxar.</li>
+          <li><code>Pomegranate.exe</code> faylını aç.</li>
+        </ol>
+      </div>
+      <div>
+        <a class="button dark-button" href="https://github.com/m1staffa/pomegranate/releases/latest/download/Pomegranate-Windows-x64.zip">ZIP faylını yüklə</a>
+        <p>Media, Office və veb yükləmələri üçün proqramın içində <strong>Alətləri hazırla</strong> bölməsini aç.</p>
+        <p>Bu buraxılış imzasızdır. Windows ilk açılışda SmartScreen bildirişi göstərə bilər.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="wrap foot">
+    <img src="assets/nar.png" width="42" height="42" alt="">
+    <div><strong>Pomegranate</strong><p>Windows üçün müstəqil fayl proqramı. Dairəvi sürüklə-burax iş üsulu macOS tətbiqi <a href="https://tangerineformac.com/">Tangerine for Mac</a>-dan ilhamlanıb.</p><a href="licenses.html">Lisenziyalar və müəllif bildirişləri</a></div>
+  </footer>
+<script defer src="demo.js"></script>
+</body>
+</html>
